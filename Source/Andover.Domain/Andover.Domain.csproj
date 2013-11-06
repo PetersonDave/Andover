@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Andover.Domain</RootNamespace>
+    <AssemblyName>Andover.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Cache\Provider\ICacheProvider.cs" />
+    <Compile Include="Components\Cache\Results\CacheDelta.cs" />
+    <Compile Include="Components\Content\ItemVersionsComponent.cs" />
+    <Compile Include="Components\Content\Provider\IContentProvider.cs" />
+    <Compile Include="Components\Content\Results\ItemCounter.cs" />
+    <Compile Include="Components\Database\Provider\Entities\Attributes\DataField.cs" />
+    <Compile Include="Components\Database\Provider\Entities\DatabaseProperties.cs" />
+    <Compile Include="Components\Database\Provider\Entities\IndexFragmentation.cs" />
+    <Compile Include="Components\Database\Provider\Entities\RecordCount.cs" />
+    <Compile Include="Components\Database\Provider\IDatabaseProvider.cs" />
+    <Compile Include="Components\Database\Provider\Queries.Designer.cs">
+      <DependentUpon>Queries.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Components\Database\Results\DatabasePropertiesAnalysis.cs" />
+    <Compile Include="Components\Database\Results\IndexFragmentationAnalysis.cs" />
+    <Compile Include="Components\Database\Results\RecordCountAnalysis.cs" />
+    <Compile Include="Components\Logs\CrashesHardComponent.cs" />
+    <Compile Include="Components\Logs\Provider\ILogsProvider.cs" />
+    <Compile Include="Components\Logs\Results\LogEntry.cs" />
+    <Compile Include="Components\Logs\Results\LogEntrySummary.cs" />
+    <Compile Include="Configuration\ICategoryDto.cs" />
+    <Compile Include="Configuration\IComponentDto.cs" />
+    <Compile Include="Core\Analyzer.cs" />
+    <Compile Include="Core\AnalyzerSettings.cs" />
+    <Compile Include="Core\CategoryBase.cs" />
+    <Compile Include="Core\ICategory.cs" />
+    <Compile Include="Components\Cache\CacheDeltasComponent.cs" />
+    <Compile Include="Core\ComponentBase.cs" />
+    <Compile Include="Core\IFactory.cs" />
+    <Compile Include="Core\IProvider.cs" />
+    <Compile Include="Components\Content\ItemChildrenComponent.cs" />
+    <Compile Include="Components\Database\DatabasePropertiesComponent.cs" />
+    <Compile Include="Components\Database\IndexFragmentationComponent.cs" />
+    <Compile Include="Components\Database\RecordCountComponent.cs" />
+    <Compile Include="Core\IComponent.cs" />
+    <Compile Include="Components\Logs\ApplicationErrorsComponent.cs" />
+    <Compile Include="Components\Logs\CrashesSoftComponent.cs" />
+    <Compile Include="Components\Logs\LongRunningRequestsComponent.cs" />
+    <Compile Include="Core\Results\Attributes\ComponentResultDescription.cs" />
+    <Compile Include="Core\Results\Attributes\ComponentResultName.cs" />
+    <Compile Include="Core\Results\ComponentResultBase.cs" />
+    <Compile Include="Core\Results\IComponentResult.cs" />
+    <Compile Include="Core\Results\Result.cs" />
+    <Compile Include="Core\Results\ResultsNormalized.cs" />
+    <Compile Include="Exceptions\ProviderNotMappedException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ComponentResultsExtensions.cs" />
+    <Compile Include="Utils\DateFormatting.cs" />
+    <Compile Include="Utils\FactoryHelper.cs" />
+    <Compile Include="Utils\ResultConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configuration\Andover.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Components\Database\Provider\Queries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Queries.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

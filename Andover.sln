@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andover.Data", "Source\Andover.Data\Andover.Data.csproj", "{EA2429DB-2C6C-4938-9627-D3FA41409BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andover.Controller", "Source\Andover.Controller\Andover.Controller.csproj", "{0BE52089-F8D1-41FE-8471-B53A8112677A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andover.Domain", "Source\Andover.Domain\Andover.Domain.csproj", "{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andover.Domain.Tests", "Source\Andover.Domain.Tests\Andover.Domain.Tests.csproj", "{3D20AA68-BC82-43D0-A66A-DCDA1F129014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2429DB-2C6C-4938-9627-D3FA41409BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2429DB-2C6C-4938-9627-D3FA41409BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2429DB-2C6C-4938-9627-D3FA41409BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2429DB-2C6C-4938-9627-D3FA41409BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE52089-F8D1-41FE-8471-B53A8112677A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE52089-F8D1-41FE-8471-B53A8112677A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE52089-F8D1-41FE-8471-B53A8112677A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE52089-F8D1-41FE-8471-B53A8112677A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEF6C6E-3E1B-4B22-89F9-7857CDF3E516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D20AA68-BC82-43D0-A66A-DCDA1F129014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D20AA68-BC82-43D0-A66A-DCDA1F129014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D20AA68-BC82-43D0-A66A-DCDA1F129014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D20AA68-BC82-43D0-A66A-DCDA1F129014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

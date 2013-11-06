@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Andover</id>
+    <version>1.0.2-alpha</version>
+    <authors>David Peterson</authors>
+    <owners>David Peterson</owners>
+    <licenseUrl>https://github.com/PetersonDave/Andover/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/PetersonDave/Andover</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Andover is a .NET framework for monitoring and examining Sitecore implementations against documented best practices.</description>
+    <summary>Andover consists of Categories from which statistics are gathered and summarized. Categories contain one or more components, each mapping to a measurable configuration setting within Sitecore.</summary>
+    <tags>Sitecore ASP.NET</tags>
+	<dependencies>
+      <dependency id="log4net" version="2.0.0" />
+	  <dependency id="Ninject" version="3.0.1.10" />
+	  <dependency id="Ninject.Extensions.Logging" version="3.0.1.0" />
+	  <dependency id="Ninject.Extensions.Logging.Log4net" version="3.0.1.0" />
+    </dependencies>
+  </metadata>
+</package>
