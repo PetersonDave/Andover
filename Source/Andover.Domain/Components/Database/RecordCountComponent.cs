@@ -39,7 +39,8 @@ namespace Andover.Domain.Components.Database
 
 		private void AnalyzeEventQueue()
 		{
-			var rca = GetRecordCountAnalysis(Queries.CountEventQueue, _maxEventQueueSize);
+		    var query = string.Format(Queries.CountEventQueue, _provider.DatabaseName);
+            var rca = GetRecordCountAnalysis(query, _maxEventQueueSize);
 			if (rca != null)
 			{
 				rca.TableName = "EventQueue";
@@ -49,7 +50,8 @@ namespace Andover.Domain.Components.Database
 
 		private void AnalyzeHistory()
 		{
-			var rca = GetRecordCountAnalysis(Queries.CountHistory, _maxHistorySize);
+            var query = string.Format(Queries.CountHistory, _provider.DatabaseName);
+            var rca = GetRecordCountAnalysis(query, _maxHistorySize);
 			if (rca != null)
 			{
 				rca.TableName = "History";
@@ -59,7 +61,8 @@ namespace Andover.Domain.Components.Database
 
 		private void AnalyzePublishQueue()
 		{
-			var rca = GetRecordCountAnalysis(Queries.CountPublishQueue, _maxPublishQueueSize);
+            var query = string.Format(Queries.CountPublishQueue, _provider.DatabaseName);
+            var rca = GetRecordCountAnalysis(query, _maxPublishQueueSize);
 			if (rca != null)
 			{
 				rca.TableName = "PublishQueue";

@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CountEventQueue" xml:space="preserve">
-    <value>SELECT count([Id]) as RowCountValue FROM [Master].[dbo].[EventQueue]</value>
+    <value>SELECT count([Id]) as RowCountValue FROM [{0}].[dbo].[EventQueue]</value>
     <comment>Retrieves number of rows within the EventQueue table</comment>
   </data>
   <data name="CountHistory" xml:space="preserve">
-    <value>SELECT COUNT([Id]) as RowCountValue FROM [Master].[dbo].[History]</value>
+    <value>SELECT COUNT([Id]) as RowCountValue FROM [{0}].[dbo].[History]</value>
     <comment>Retrieves number of rows within the History table</comment>
   </data>
   <data name="CountPublishQueue" xml:space="preserve">
-    <value>SELECT count([Id]) as RowCountValue FROM [Master].[dbo].[PublishQueue]</value>
+    <value>SELECT count([Id]) as RowCountValue FROM [{0}].[dbo].[PublishQueue]</value>
     <comment>Retrieves number of rows within the PublishQueue table</comment>
   </data>
   <data name="DatabaseProperties" xml:space="preserve">

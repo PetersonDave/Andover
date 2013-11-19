@@ -13,15 +13,15 @@ namespace Andover.Data.Database.Provider
 	public class DatabaseProvider : ProviderBase, IDatabaseProvider
 	{
 		public string ConnectionString { get; set; }
+        public string DatabaseName { get; set; }
 
-		public DatabaseProvider(string connectionString)
+		public DatabaseProvider(string connectionString, string databaseName)
 		{
-			if (string.IsNullOrEmpty(connectionString))
-			{
-				throw new ArgumentNullException("connectionString");
-			}
+            if (string.IsNullOrEmpty(connectionString)) throw new ArgumentNullException("connectionString");
+            if (string.IsNullOrEmpty(databaseName)) throw new ArgumentNullException("Database");
 
 			ConnectionString = connectionString;
+		    DatabaseName = databaseName;
 		}
 
 		public T GetFirstResult<T>(string query)
