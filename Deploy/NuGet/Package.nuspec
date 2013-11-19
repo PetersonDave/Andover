@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Andover</id>
-    <version>1.0.2-alpha</version>
+    <version>1.0.3-alpha</version>
     <authors>David Peterson</authors>
     <owners>David Peterson</owners>
     <licenseUrl>https://github.com/PetersonDave/Andover/blob/master/LICENSE.txt</licenseUrl>
